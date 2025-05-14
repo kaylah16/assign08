@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<title>AJAX Retrieve</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="pb-2 mt-4 mb-2 border-bottom">
+	<h1>AJAX Retrieve</h1>
+</div>
+
+<div class="row m-4 d-flex justify-content-around">
+	<button class="btn btn-primary" id="retrieve">Retrieve</button>
+	<button class="btn btn-primary" id="bad_retrieve">Bad Retrieve</button>
+	<button class="btn btn-primary" id="retrieve_json">Retrieve JSON</button>
+</div>
+
+<div class="row m-4 d-flex justify-content-center">
+	<div class="alert alert-danger w-75" role="alert" id="error_msg">
+		Error message here
+	</div>
+</div>
+
+<div class="row m-4 gx-2">
+	<div class="col-6">
+		<div class="border p-1">
+			<h3>A place for text</h3>
+			<pre class="border" id="display_text">put text here</pre>
+		</div>
+	</div>
+	<div class="col-6">
+		<div class="border p-1">
+			<h3>A place for html</h3>
+			<div class="border" id="display_html">put html here</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<script src="ajax_retrieve.js"></script>
+
+</body>
+
+</html>

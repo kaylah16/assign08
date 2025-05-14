@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<title>AJAX List</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="pb-2 mt-4 mb-2 border-bottom">
+	<h1>AJAX List</h1>
+</div>
+
+<div class="row m-4 d-flex justify-content-center">
+	<div class="alert alert-danger w-75" role="alert" id="error_msg">
+		Error message here
+	</div>
+</div>
+
+<div>
+	<ul class="list-group" id="thelist">
+		<li class="list-group-item">Quart</li>
+		<li class="list-group-item">Vanilla</li>
+		<li class="list-group-item">Garbage Truck</li>
+
+			<!--  New list item from mockup   -->
+		<li class="list-group-item d-none" id="template">
+			<div class="d-flex flex-row justify-content-center">
+				<div class="d-none col-min button" style="cursor:pointer"> <!-- red delete button-->
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="48" height="48">
+						<circle cx="24" cy="24" r="16" stroke="#FF0000" stroke-width="2" fill="none" />
+						<text x="16" y="32" font-size="24px" font-weight="bold" fill="#FF0000">X</text>
+					</svg>
+				</div>
+			</div>
+			<div class="d-flex flex-row justify-content-between">
+				<div class="col-min align-self-start">
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="78" height="75">
+						<text x="8" y="115" font-size="144px" font-weight="bold" fill="#000000" font-family="Times New Roman">“</text>
+					</svg>
+				</div>
+		
+				<div class="col align-self-center text">
+					All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. 
+					All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. 
+					All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. 
+					All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy. 
+				</div>
+			
+				<div class="col-min align-self-end">
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="78" height="75">
+						<text x="8" y="115" font-size="144px" font-weight="bold" fill="#000000" font-family="Times New Roman">”</text>
+					</svg>
+				</div>
+		
+			</div>
+			<div class="d-flex flex-row justify-content-center mt-2">
+				<div><span class="speaker">Jack</span>, <span class="font-italic source">...behind you</span></div>
+			</div>
+		</li>
+	</ul>
+</div>
+
+</div>
+
+<script src="quote_list.js"></script>
+
+</body>
+
+</html>
